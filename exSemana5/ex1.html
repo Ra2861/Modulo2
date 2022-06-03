@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="ex1.js"></script>
+    <title>Calculadora</title>
+</head>
+
+<body>
+    <!--<form name="calculadora">
+        <H1>Calculadora</H1>
+         <label for="PrimeiroNumero">Primeiro numero:</label>
+         <input type="number" name="PrimeiroNumero" step="1" id="Numero" value=""><br>
+         <br>
+         <label for="Segundonumero">Segundo numero</label>
+         <input type="text" name="SegundoNumero" id="SegundoNumero" value="">
+         <br>
+         <input type="button" name="resultado" value="resultado" id="resultado" onclick="calculadora()">
+    </form>
+    <br>
+    <div id="EspaçoResultado">
+
+    </div>-->
+    <form name="calcform" method="post" action="">
+        <legend> Calculadora Simples</legend>
+
+        <label for="valor1">1 numero:</label>
+        <input type="text" name="valor1" id="valor1" /><br>
+
+        <label for="oper">Operação:</label>
+        <select name="oper" id="oper">
+            <option value="somar">+</option>
+            <option value="subtrair">-</option>
+            <option value="multiplicar">*</option>
+            <option value="dividir">/</option>
+        </select><br>
+
+        <label for="valor2"> 2 numero:</label>
+        <input type="text" name="valor2" id="valor2" /><br><br>
+
+        <label for="res">Resultado:</label>
+        <input type="text" name="res" id="res" />
+
+        <input type="button" value="Calcular" class="botao" onClick="calcular(document.calcform.oper.value)" />
+    </form>
+
+</body>
+
+</html>
