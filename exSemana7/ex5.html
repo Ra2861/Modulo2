@@ -8,14 +8,27 @@
 </head>
 <body>
     
-<h1> Veja sua nota </h1>
+<h1> BOLETIM </h1>
 
  <form action="/action_page.php">
-      <label for="fname" id="quant de alunos"> Quant. de Alunos : </label>
+      <label for="fname" id="quant"> Quant. de Alunos : </label>
       <input type="number" id="fname" name="fname"><br><br>
-      <label for="lname">Nota de cada Aluno :</label>
-      <input type="number" id="lname" name="lname"><br><br>
+
+      <label for="lname">Numero do aluno:</label>
+      <input type="number" id="numero" name="lname"><br><br>
+
+      <label for="lname">Nota do Aluno na prova:</label>
+      <input type="number" id="prova" name="lname"><br><br>
+      
+      <label for="lname">Nota do Aluno no trabalho:</label>
+      <input type="number" id="trabalho" name="lname"><br><br>
+
       <input type="submit" value="Submit" onclick="nota()">
+      <div id="mTurma"></div>
+
+      <div id="nota"></div>
+
+      <div></div>
  </form>
 
 </body>
